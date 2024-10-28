@@ -33,7 +33,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+  int _counter = 1252;
 
   void _incrementCounter() {
     setState(() {
@@ -59,7 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
-            const Swift(),
+            Swift(index: _counter,),
             IconButton(
                 onPressed: _incrementCounter,
                 icon: Icon(
